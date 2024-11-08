@@ -1,5 +1,5 @@
 var margin = { top: 20, right: 250, bottom: 20, left: 150 },
-    width = 2000 - margin.right - margin.left, // Large enough to allow horizontal scroll
+    width = 2500 - margin.right - margin.left, // Large enough to allow horizontal scroll
     height = 1000 - margin.top - margin.bottom; // Large enough to allow vertical scroll
 
 var i = 0, duration = 750, root;
@@ -27,9 +27,34 @@ var treeData = {
                         {
                             name: "Servers",
                             children: [
-                                { name: "Web Server" },
+                                { name: "Web Server",
+                                    children: [
+                                        { name: "IEHNDN-DEVOPS" },
+                                        { name: "IEUS-SP01" }
+                                    ]
+                                 },
                                 { name: "Mail Server" },
-                                { name: "Domain controllers" },
+                                { name: "Domain controllers",
+                                    children: [
+                                        { name: "IEDEVNET",
+                                            children: [
+                                                { name: "HV01",
+                                                    children: [
+                                                        { name: "IEDEVNET DC02" },
+                                                        { name: "IEDEVNETSP01" },
+                                                        { name: "IEDEVNETSP09" }
+                                                    ]
+                                                 }
+                                            ]
+                                         },
+                                        { name: "IE.LOCAL",
+                                            children: [
+                                                { name: "IEHRNDC03"},
+                                                { name: "IEDEVDC04"}
+                                            ]
+                                         }
+                                    ]
+                                 },
                                 { name: "Application Server" }
                             ]
                         },
