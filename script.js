@@ -120,8 +120,16 @@ var treeData = {
                             name: "Network Devices",
                             children: [
                                 { name: "Router" },
-                                { name: "Switch" },
-                                { name: "Firewall" }
+                                { name: "Switch",
+                                    children: [
+                                        { name: "Cisco switch SF300 " }
+                                    ]
+                                 },
+                                { name: "Firewall",
+                                    children: [
+                                        { name: "SOPHOS " }
+                                    ]
+                                 }
                             ]
                         }
                     ]
