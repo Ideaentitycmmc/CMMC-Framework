@@ -2,7 +2,7 @@ var margin = { top: 20, right: 250, bottom: 20, left: 150 },
     width = 2500 - margin.right - margin.left, // Large enough to allow horizontal scroll
     height = 1000 - margin.top - margin.bottom; // Large enough to allow vertical scroll
 
-var i = 0, duration = 750, root;
+var i = 0, duration = 750, root; 
 
 var tree = d3.layout.tree().size([height, width]);
 
